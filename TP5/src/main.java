@@ -15,6 +15,6 @@ public class main {
         meteo.add("Orageux", false);
         quiz.add(meteo);
 
-        System.out.print(quiz);
+        quiz.jouer();
     }
 }

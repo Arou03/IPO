@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Reponse {
     private String txt;
     private boolean valid;

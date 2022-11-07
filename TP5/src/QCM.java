@@ -34,4 +34,23 @@ public class QCM {
         }
         return res;
     }
+
+    public void jouer() {
+        int score = 0;
+        int scoretot = 0;
+        for (Question q : qcm) {
+            score += q.ask();
+            scoretot+= q.getBarem();
+        }
+
+        System.out.println("Bravo! Vous avez un score de " + score + "/" + scoretot + ".");
+    }
+
+    public QCM copy() {
+        QCM res = new QCM();
+        for (Question q : qcm) {
+            res.add(q.copy());
+        }
+        return res;
+    }
 }
